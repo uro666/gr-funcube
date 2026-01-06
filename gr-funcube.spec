@@ -100,11 +100,11 @@ export LDFLAGS="%{ldflags} -lpython%{pyver}"
 
 %install
 %ninja_install -C build
-%fdupes %{buildroot}/%{_prefix}
+%fdupes %{buildroot}%{_prefix}
 install -Dm 0644 50-funcube.rules %{buildroot}%{_udevrulesdir}/50-funcube.rules
 
 %check
-pushd %{_vpath_builddir}
+pushd build
 %ninja_test
 popd
 
