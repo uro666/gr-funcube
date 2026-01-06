@@ -22,12 +22,16 @@ BuildRequires:	cmake
 BuildRequires:	cmake(boost_numpy)
 BuildRequires:	cmake(hidapi)
 BuildRequires:	doxygen
+BuildRequires:	gnuradio-pmt-devel
 BuildRequires:	gnuradio-utils
 BuildRequires:	graphviz
 BuildRequires:	fdupes
+BuildRequires:	mpir-devel
 BuildRequires:	ninja
 BuildRequires:	pkgconfig
 BuildRequires:	pkgconfig(alsa)
+BuildRequires:	pkgconfig(gmp)
+BuildRequires:	pkgconfig(gmpxx)
 BuildRequires:	pkgconfig(gnuradio-audio)
 BuildRequires:	pkgconfig(gnuradio-blocks)
 BuildRequires:	pkgconfig(gnuradio-runtime)
